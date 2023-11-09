@@ -9,8 +9,12 @@ html {
     margin: auto;
 }
 
+.fundo-cor{
+    background-color:rgba(240, 248, 255, 0);
+}
+
 .fonte-menu{
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -21,34 +25,37 @@ nav a:hover {
 }
 
 body{
-    background-color: rgb(51, 51, 51);
+    /* background-image: url(../img/marvel/fundo.webp) ; */
+    /* background-color: rgb(32, 32, 32); */
 }
 
 .container{
 }
 
-.introducao{
+.fundo-branco{
     padding: 10px;
     background-color: #ffff;
     border-radius: 25px;
 }
 
-
-.rowcard{
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-}
-
 .card-shadow {
-    box-shadow: 10px 6px 20px 6px #72BDB8;
-}
-.rowcard{
-    display: flex;
-    flex-flow:wrap ;
-    text-align: center;
+    box-shadow: 5px 6px 20px 6px rgb(56, 56, 226);
 }
 
 .espaco{
     width: 99.8%; 
 } 
+
+.espacoabaixo{
+    margin-bottom: 2%;
+
+}
+
+.fundo-sombra{
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 250px;
+}
+
+.capa-filme{
+    width: 100%;
+}
