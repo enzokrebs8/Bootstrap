@@ -40,16 +40,11 @@ body{
     text-align: center;
 }
 
-/*
-.navbar {
+.card-shadow {
+    box-shadow: 10px 6px 20px 6px #72BDB8;
+}
+.rowcard{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; 
-  }
-  
-  .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
+    flex-flow:wrap ;
+    text-align: center;
+}
