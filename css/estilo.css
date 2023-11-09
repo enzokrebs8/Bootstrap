@@ -48,3 +48,7 @@ body{
     flex-flow:wrap ;
     text-align: center;
 }
+
+.espaco{
+    width: 99.8%; 
+} 
