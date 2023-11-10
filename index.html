@@ -14,7 +14,7 @@
 
 <body>
     <header class="sticky">
-        <nav class="sticky fonte-menu navbar navbar-expand-lg bg-light fundo-cor"> 
+        <nav class="sticky fonte-menu navbar navbar-expand-lg bg-light fundo-cor">
             <div class="container-fluid">
                 <a class="navbar-brand" href="https://www.marvel.com/" target="_blank">
                     <img class="ico" src="img/marvel/marvel.ico" alt="Logo MARVEL">
@@ -52,7 +52,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Digite sua procura..." aria-label="Search">
+                        <input id="searchbar" class="form-control me-2" type="search"
+                            placeholder="Digite sua procura..." onkeyup="search()" aria-label="Search">
                         <button class="btn btn-primary" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -110,7 +111,7 @@
             </button>
         </div>
     </div>
-    
+
     <main class="container">
 
         <section id="introducao" class="fundo-branco mt-1 mb-4">
@@ -119,89 +120,169 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Os Vingadores, também conhecidos como Os Heróis Mais Poderosos da Terra, são um grupo de super-heróis fictícios que aparecem em quadrinhos americanos publicados pela Marvel Comics. A equipe fez sua primeira aparição em setembro de 1963, criada por Stan Lee e Jack Kirby.</p>
-                    <p>A primeira adaptação cinematográfica dos Vingadores começou com o lançamento do primeiro filme em 2012, dirigido por Joss Whedon. O filme reuniu os super-heróis mais populares da Marvel, como Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro, em uma batalha épica contra a ameaça de Loki e os extraterrestres conhecidos como Chitauri.</p>
-                </div> 
+                    <p>Os Vingadores, também conhecidos como Os Heróis Mais Poderosos da Terra, são um grupo de
+                        super-heróis fictícios que aparecem em quadrinhos americanos publicados pela Marvel Comics. A
+                        equipe fez sua primeira aparição em setembro de 1963, criada por Stan Lee e Jack Kirby.</p>
+                    <p>A primeira adaptação cinematográfica dos Vingadores começou com o lançamento do primeiro filme em
+                        2012, dirigido por Joss Whedon. O filme reuniu os super-heróis mais populares da Marvel, como
+                        Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro, em uma batalha épica
+                        contra a ameaça de Loki e os extraterrestres conhecidos como Chitauri.</p>
+                </div>
                 <div class="col-md-6">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button id="v1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <button id="v1" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
                                     <strong>Os Vingadores - The Avengers</strong>
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="row accordion-body">
                                     <div class="col-md-5">
-                                        <img class="capa-filme" src="img/vingadores-1/Os_Vingadores.webp" alt="Os Vingadores">
+                                        <img class="capa-filme" src="img/vingadores-1/Os_Vingadores.webp"
+                                            alt="Os Vingadores">
                                     </div>
                                     <div class="col-md-7">
-                                        <p>Em "Os Vingadores", a primeira reunião dos super-heróis da Marvel no cinema é convocada pelo diretor da S.H.I.E.L.D., Nick Fury, para combater a ameaça de Loki e seu exército alienígena. Apesar de suas diferenças e conflitos internos, incluindo a luta entre Thor e Homem de Ferro, os heróis conseguem trabalhar juntos para salvar o planeta da destruição iminente.</p>
-                                        <p>O filme introduz uma equipe formidável composta por Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro. Cada personagem traz suas habilidades únicas para a batalha, destacando-se não apenas pela força física, mas também pela astúcia e inteligência estratégica, demonstrando o poder coletivo e a diversidade de talentos dentro do grupo dos Vingadores.</p>
-                                        <p>Com sequências de ação intensas e diálogos bem-humorados, "Os Vingadores" estabelece uma base sólida para o universo cinematográfico da Marvel, destacando a importância da cooperação e da união em face de desafios épicos. O filme se tornou um marco significativo no gênero de super-heróis, solidificando a popularidade e o impacto duradouro desses icônicos personagens da Marvel.</p>
+                                        <p>Em "Os Vingadores", a primeira reunião dos super-heróis da Marvel no cinema é
+                                            convocada pelo diretor da S.H.I.E.L.D., Nick Fury, para combater a ameaça de
+                                            Loki e seu exército alienígena. Apesar de suas diferenças e conflitos
+                                            internos, incluindo a luta entre Thor e Homem de Ferro, os heróis conseguem
+                                            trabalhar juntos para salvar o planeta da destruição iminente.</p>
+                                        <p>O filme introduz uma equipe formidável composta por Homem de Ferro, Capitão
+                                            América, Thor, Hulk, Viúva Negra e Gavião Arqueiro. Cada personagem traz
+                                            suas habilidades únicas para a batalha, destacando-se não apenas pela força
+                                            física, mas também pela astúcia e inteligência estratégica, demonstrando o
+                                            poder coletivo e a diversidade de talentos dentro do grupo dos Vingadores.
+                                        </p>
+                                        <p>Com sequências de ação intensas e diálogos bem-humorados, "Os Vingadores"
+                                            estabelece uma base sólida para o universo cinematográfico da Marvel,
+                                            destacando a importância da cooperação e da união em face de desafios
+                                            épicos. O filme se tornou um marco significativo no gênero de super-heróis,
+                                            solidificando a popularidade e o impacto duradouro desses icônicos
+                                            personagens da Marvel.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button id="v2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <strong>Vingadores: Era de Ultron</strong> 
+                                <button id="v2" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <strong>Vingadores: Era de Ultron</strong>
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="row accordion-body">
                                     <div class="col-md-5">
-                                        <img class="capa-filme" src="img/vingadores-era-de-ultron/capa.jpg" alt="Os Vingadores">
+                                        <img class="capa-filme" src="img/vingadores-era-de-ultron/capa.jpg"
+                                            alt="Os Vingadores">
                                     </div>
                                     <div class="col-md-7">
-                                        <p>"Vingadores: Era de Ultron" retrata os heróis enfrentando a inteligência artificial Ultron, uma criação acidental de Tony Stark. Ultron, com sua visão distorcida de paz mundial, busca a extinção da humanidade. Os Vingadores se encontram confrontados com dilemas éticos e internos, enquanto lutam para deter Ultron e suas criações, incluindo os poderosos irmãos Wanda e Pietro Maximoff, também conhecidos como Feiticeira Escarlate e Mercúrio."</p>
-                                        <p>O filme aprofunda os conflitos entre os membros da equipe, revelando suas fraquezas e temores mais profundos. Enquanto enfrentam desafios pessoais, os Vingadores precisam se unir mais uma vez para enfrentar a ameaça de Ultron, ao mesmo tempo em que lidam com a introdução de novos aliados, como Visão e Mercúrio, e a evolução das relações entre os personagens, especialmente a crescente amizade entre Viúva Negra e Bruce Banner.</p>
-                                        <p>"Vingadores: Era de Ultron" apresenta uma narrativa repleta de ação e emoção, explorando temas complexos como responsabilidade, poder e as consequências imprevistas da tecnologia. O filme estabelece novos desafios para os heróis, preparando o terreno para futuros confrontos e desenvolvimentos no Universo Cinematográfico Marvel, enquanto destaca a importância da confiança mútua e da colaboração para superar adversidades monumentais.</p>
+                                        <p>"Vingadores: Era de Ultron" retrata os heróis enfrentando a inteligência
+                                            artificial Ultron, uma criação acidental de Tony Stark. Ultron, com sua
+                                            visão distorcida de paz mundial, busca a extinção da humanidade. Os
+                                            Vingadores se encontram confrontados com dilemas éticos e internos, enquanto
+                                            lutam para deter Ultron e suas criações, incluindo os poderosos irmãos Wanda
+                                            e Pietro Maximoff, também conhecidos como Feiticeira Escarlate e Mercúrio."
+                                        </p>
+                                        <p>O filme aprofunda os conflitos entre os membros da equipe, revelando suas
+                                            fraquezas e temores mais profundos. Enquanto enfrentam desafios pessoais, os
+                                            Vingadores precisam se unir mais uma vez para enfrentar a ameaça de Ultron,
+                                            ao mesmo tempo em que lidam com a introdução de novos aliados, como Visão e
+                                            Mercúrio, e a evolução das relações entre os personagens, especialmente a
+                                            crescente amizade entre Viúva Negra e Bruce Banner.</p>
+                                        <p>"Vingadores: Era de Ultron" apresenta uma narrativa repleta de ação e emoção,
+                                            explorando temas complexos como responsabilidade, poder e as consequências
+                                            imprevistas da tecnologia. O filme estabelece novos desafios para os heróis,
+                                            preparando o terreno para futuros confrontos e desenvolvimentos no Universo
+                                            Cinematográfico Marvel, enquanto destaca a importância da confiança mútua e
+                                            da colaboração para superar adversidades monumentais.</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button id="v3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <strong>Vingadores: Guerra Infinita</strong> 
+                                <button id="v3" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <strong>Vingadores: Guerra Infinita</strong>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="row accordion-body">
                                     <div class="col-md-5">
-                                        <img class="capa-filme" src="img/vingadores-guerra-infinita/capa.jpeg" alt="Os Vingadores">
+                                        <img class="capa-filme" src="img/vingadores-guerra-infinita/capa.jpeg"
+                                            alt="Os Vingadores">
                                     </div>
                                     <div class="col-md-7">
-                                        <p>Em "Vingadores: Guerra Infinita", os heróis enfrentam seu maior desafio até o momento, quando o poderoso vilão Thanos busca reunir as seis Joias do Infinito para controlar o universo. Os Vingadores se unem a outros aliados, incluindo os Guardiões da Galáxia e o Pantera Negra, em uma batalha épica para impedir Thanos de concretizar seus planos de destruição em massa.</p>
-                                        <p>O filme apresenta confrontos intensos e reviravoltas emocionantes, enquanto os heróis lutam para proteger as Joias do Infinito e, por consequência, o destino do universo. Thanos emerge como um vilão complexo, cujas motivações e crenças controversas desafiam os próprios fundamentos do que significa ser um herói, levando os Vingadores a questionar o custo da sua própria determinação em salvar o mundo.</p>
-                                        <p>Com uma trama repleta de suspense e ação de tirar o fôlego, "Vingadores: Guerra Infinita" oferece um retrato sombrio e emocionalmente carregado do conflito entre o bem e o mal, explorando temas de sacrifício, coragem e esperança diante de adversidades insuperáveis. O filme culmina em um final chocante que estabelece as bases para a emocionante conclusão da saga no filme subsequente.</p>
+                                        <p>Em "Vingadores: Guerra Infinita", os heróis enfrentam seu maior desafio até o
+                                            momento, quando o poderoso vilão Thanos busca reunir as seis Joias do
+                                            Infinito para controlar o universo. Os Vingadores se unem a outros aliados,
+                                            incluindo os Guardiões da Galáxia e o Pantera Negra, em uma batalha épica
+                                            para impedir Thanos de concretizar seus planos de destruição em massa.</p>
+                                        <p>O filme apresenta confrontos intensos e reviravoltas emocionantes, enquanto
+                                            os heróis lutam para proteger as Joias do Infinito e, por consequência, o
+                                            destino do universo. Thanos emerge como um vilão complexo, cujas motivações
+                                            e crenças controversas desafiam os próprios fundamentos do que significa ser
+                                            um herói, levando os Vingadores a questionar o custo da sua própria
+                                            determinação em salvar o mundo.</p>
+                                        <p>Com uma trama repleta de suspense e ação de tirar o fôlego, "Vingadores:
+                                            Guerra Infinita" oferece um retrato sombrio e emocionalmente carregado do
+                                            conflito entre o bem e o mal, explorando temas de sacrifício, coragem e
+                                            esperança diante de adversidades insuperáveis. O filme culmina em um final
+                                            chocante que estabelece as bases para a emocionante conclusão da saga no
+                                            filme subsequente.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button id="v4" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <strong>Vingadores: Ultimato</strong> 
+                                <button id="v4" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <strong>Vingadores: Ultimato</strong>
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="row accordion-body">
                                     <div class="col-md-5">
-                                        <img class="capa-filme" src="img/vingadores-ultimato/capa.jpg" alt="Os Vingadores">
+                                        <img class="capa-filme" src="img/vingadores-ultimato/capa.jpg"
+                                            alt="Os Vingadores">
                                     </div>
                                     <div class="col-md-7">
-                                        <p>Em "Vingadores: Ultimato", os heróis lidam com as consequências devastadoras do estalar de dedos de Thanos, que dizimou metade da vida no universo. Com a esperança diminuindo e o desespero aumentando, os Vingadores remanescentes unem forças em uma missão de viagem no tempo para recuperar as Joias do Infinito e reverter os eventos catastróficos que levaram à destruição em massa.</p>
-                                        <p>O filme aborda temas de perda, redenção e determinação, enquanto os heróis enfrentam o peso de suas próprias falhas passadas e o desafio de superar traumas pessoais para restaurar a ordem no universo. A jornada emocional dos personagens se desenrola em meio a reviravoltas surpreendentes e momentos de camaradagem, solidificando os laços entre os Vingadores e reforçando o significado de sacrifício em prol do bem maior.</p>
-                                        <p>Com cenas de ação intensas e um senso de urgência palpável, "Vingadores: Ultimato" culmina em um clímax emocionante, que não apenas encerra uma era icônica no Universo Cinematográfico da Marvel, mas também oferece um fechamento satisfatório para as narrativas complexas e interligadas dos personagens, demonstrando o poder da resiliência e da unidade diante de desafios aparentemente insuperáveis.</p>
+                                        <p>Em "Vingadores: Ultimato", os heróis lidam com as consequências devastadoras
+                                            do estalar de dedos de Thanos, que dizimou metade da vida no universo. Com a
+                                            esperança diminuindo e o desespero aumentando, os Vingadores remanescentes
+                                            unem forças em uma missão de viagem no tempo para recuperar as Joias do
+                                            Infinito e reverter os eventos catastróficos que levaram à destruição em
+                                            massa.</p>
+                                        <p>O filme aborda temas de perda, redenção e determinação, enquanto os heróis
+                                            enfrentam o peso de suas próprias falhas passadas e o desafio de superar
+                                            traumas pessoais para restaurar a ordem no universo. A jornada emocional dos
+                                            personagens se desenrola em meio a reviravoltas surpreendentes e momentos de
+                                            camaradagem, solidificando os laços entre os Vingadores e reforçando o
+                                            significado de sacrifício em prol do bem maior.</p>
+                                        <p>Com cenas de ação intensas e um senso de urgência palpável, "Vingadores:
+                                            Ultimato" culmina em um clímax emocionante, que não apenas encerra uma era
+                                            icônica no Universo Cinematográfico da Marvel, mas também oferece um
+                                            fechamento satisfatório para as narrativas complexas e interligadas dos
+                                            personagens, demonstrando o poder da resiliência e da unidade diante de
+                                            desafios aparentemente insuperáveis.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>          
-                </div> 
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -213,8 +294,9 @@
                 <div class="row">
                     <div class="col-md-2 espacoabaixo">
                         <div class="card trás-2 card-shadow">
-                            <img src="img/cada-vingador/poster-capitao-31mai2011.jpg" clas="card-img-top" alt="Capitão América (Steve Rogers)">
-                            <div class="card-body"> 
+                            <img src="img/cada-vingador/poster-capitao-31mai2011.jpg" clas="card-img-top"
+                                alt="Capitão América (Steve Rogers)">
+                            <div class="card-body">
                                 <h5 class="card-title">Capitão América (Steve Rogers)</h5>
                                 <p class="card-text">Chris Evans</p>
                             </div>
@@ -222,17 +304,18 @@
                     </div>
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
-                            <img class="espaco" src="img/cada-vingador/homem-de-ferro.jpg" alt="Homem de Ferro (Tony Stark)">
-                            <div class="card-body"> 
+                            <img class="espaco" src="img/cada-vingador/homem-de-ferro.jpg"
+                                alt="Homem de Ferro (Tony Stark)">
+                            <div class="card-body">
                                 <h5 class="card-title">Homem de Ferro (Tony Stark)</h5>
-                                <p class="card-text">Robert Downey Jr.</p> 
+                                <p class="card-text">Robert Downey Jr.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
                             <img class="espaco" src="img/cada-vingador/thor.jpg" alt="Thor (Thor Odinson)">
-                            <div class="card-body"> 
+                            <div class="card-body">
                                 <h5 class="card-title">Thor (Thor Odinson)</h5>
                                 <p class="card-text">Chris Hemsworth</p>
                             </div>
@@ -241,16 +324,17 @@
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
                             <img class="espaco" src="img/cada-vingador/hulk.jpg" alt="Hulk (Bruce Benner)">
-                            <div class="card-body"> 
+                            <div class="card-body">
                                 <h5 class="card-title">Hulk (Bruce Benner)</h5>
-                                <p class="card-text">Mark Ruffalo</p> 
+                                <p class="card-text">Mark Ruffalo</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
-                            <img class="espaco" src="img/cada-vingador/viuva-negra.jpg" alt="Viúva Negra (Natasha Romanoff)">
-                            <div class="card-body"> 
+                            <img class="espaco" src="img/cada-vingador/viuva-negra.jpg"
+                                alt="Viúva Negra (Natasha Romanoff)">
+                            <div class="card-body">
                                 <h5 class="card-title">Viúva Negra (Natasha Romanoff)</h5>
                                 <p class="card-text">Scarlett Johansson</p>
                             </div>
@@ -258,20 +342,22 @@
                     </div>
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
-                            <img class="espaco" src="img/cada-vingador/gaviao-arqueiro.jpg" alt="Gavião Arqueiro (Clint Barton)">
-                            <div class="card-body"> 
+                            <img class="espaco" src="img/cada-vingador/gaviao-arqueiro.jpg"
+                                alt="Gavião Arqueiro (Clint Barton)">
+                            <div class="card-body">
                                 <h5 class="card-title">Gavião Arqueiro (Clint Barton)</h5>
                                 <p class="card-text">Jeremy Renner</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
-                            <img class="espaco" src="img/cada-vingador/Nick_Fury.webp" alt="Nick Fury (Nicholas Joseph Fury)">
-                            <div class="card-body"> 
+                            <img class="espaco" src="img/cada-vingador/Nick_Fury.webp"
+                                alt="Nick Fury (Nicholas Joseph Fury)">
+                            <div class="card-body">
                                 <h5 class="card-title">Nick Fury (Nicholas Joseph Fury)</h5>
                                 <p class="card-text">Nick Fury</p>
                             </div>
@@ -280,7 +366,7 @@
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
                             <img class="espaco" src="img/cada-vingador/loki.webp" alt="Loki (Loki Laufeysson)">
-                            <div class="card-body"> 
+                            <div class="card-body">
                                 <h5 class="card-title">Loki (Loki Laufeysson)</h5>
                                 <p class="card-text">Tom Hiddleston</p>
                             </div>
@@ -289,7 +375,7 @@
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
                             <img class="espaco" src="img/cada-vingador/visao.webp" alt="Visão">
-                            <div class="card-body"> 
+                            <div class="card-body">
                                 <h5 class="card-title">Visão</h5>
                                 <p class="card-text">Paul Bettany</p>
                             </div>
@@ -297,8 +383,9 @@
                     </div>
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
-                            <img class="espaco" src="img/cada-vingador/wanda.webp" alt="Feiticeira Escarlate (Wanda Maximoff)">
-                            <div class="card-body"> 
+                            <img class="espaco" src="img/cada-vingador/wanda.webp"
+                                alt="Feiticeira Escarlate (Wanda Maximoff)">
+                            <div class="card-body">
                                 <h5 class="card-title">Feiticeira Escarlate (Wanda Maximoff)</h5>
                                 <p class="card-text">Elizabeth Olsen</p>
                             </div>
@@ -307,7 +394,7 @@
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
                             <img class="espaco" src="img/cada-vingador/mercurio.webp" alt="Mercúrio (Pietro Maximoff)">
-                            <div class="card-body"> 
+                            <div class="card-body">
                                 <h5 class="card-title">Mercúrio (Pietro Maximoff)</h5>
                                 <p class="card-text">Aaron Taylor-Johnson</p>
                             </div>
@@ -315,8 +402,9 @@
                     </div>
                     <div class="col-md-2 espacoabaixo">
                         <div class="card card-shadow">
-                            <img class="espaco" src="img/cada-vingador/Rhodes.webp" alt="Máquina de Combate (James Rhodes)">
-                            <div class="card-body"> 
+                            <img class="espaco" src="img/cada-vingador/Rhodes.webp"
+                                alt="Máquina de Combate (James Rhodes)">
+                            <div class="card-body">
                                 <h5 class="card-title">Máquina de Combate (James Rhodes)</h5>
                                 <p class="card-text">Don Cheadle</p>
                             </div>
@@ -328,14 +416,26 @@
 
         <section class="fundo-branco" id="curiosidades">
             <div class="row col-md-12">
-                 <h1 class="text-center">Curiosidades</h1>
+                <h1 class="text-center">Curiosidades</h1>
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    <p>1. <strong>Stan Lee e suas Participações Especiais:</strong> Stan Lee, o lendário co-criador de muitos dos personagens da Marvel, fez aparições especiais em todos os filmes dos Vingadores, muitas vezes em pequenos papéis ou cameos divertidos que os fãs adoraram procurar.</p>
-                    <p>2. <strong>Referências e Easter Eggs Ocultos:</strong> Os filmes dos Vingadores são conhecidos por sua rica camada de referências e easter eggs que conectam diferentes partes do Universo Cinematográfico da Marvel (MCU). Os fãs são incentivados a prestar atenção em detalhes sutis, como diálogos e aparições de personagens, que se entrelaçam ao longo de vários filmes.</p>
-                    <p>3. <strong>Trabalho de Dublês e Efeitos Especiais:</strong> Por trás das cenas de ação espetaculares nos filmes dos Vingadores, há equipes dedicadas de dublês e profissionais de efeitos especiais que trabalham incansavelmente para criar sequências de luta convincentes e efeitos visuais impressionantes, muitas vezes empurrando os limites do que é possível no cinema de super-heróis.</p>
-                    <p>4. <strong>Influência dos Quadrinhos Originais:</strong> Os filmes dos Vingadores frequentemente fazem referências e homenagens aos quadrinhos originais da Marvel, seja através de enredos inspirados, diálogos marcantes ou momentos visuais que ecoam as páginas icônicas das histórias em quadrinhos.</p>
+                    <p>1. <strong>Stan Lee e suas Participações Especiais:</strong> Stan Lee, o lendário co-criador de
+                        muitos dos personagens da Marvel, fez aparições especiais em todos os filmes dos Vingadores,
+                        muitas vezes em pequenos papéis ou cameos divertidos que os fãs adoraram procurar.</p>
+                    <p>2. <strong>Referências e Easter Eggs Ocultos:</strong> Os filmes dos Vingadores são conhecidos
+                        por sua rica camada de referências e easter eggs que conectam diferentes partes do Universo
+                        Cinematográfico da Marvel (MCU). Os fãs são incentivados a prestar atenção em detalhes sutis,
+                        como diálogos e aparições de personagens, que se entrelaçam ao longo de vários filmes.</p>
+                    <p>3. <strong>Trabalho de Dublês e Efeitos Especiais:</strong> Por trás das cenas de ação
+                        espetaculares nos filmes dos Vingadores, há equipes dedicadas de dublês e profissionais de
+                        efeitos especiais que trabalham incansavelmente para criar sequências de luta convincentes e
+                        efeitos visuais impressionantes, muitas vezes empurrando os limites do que é possível no cinema
+                        de super-heróis.</p>
+                    <p>4. <strong>Influência dos Quadrinhos Originais:</strong> Os filmes dos Vingadores frequentemente
+                        fazem referências e homenagens aos quadrinhos originais da Marvel, seja através de enredos
+                        inspirados, diálogos marcantes ou momentos visuais que ecoam as páginas icônicas das histórias
+                        em quadrinhos.</p>
                 </div>
                 <div class="col-md-4">
                     <img class="capa-stan" src="img/marvel/stan-lee.jpg" alt="Stan Lee">
@@ -353,10 +453,24 @@
                 </div>
                 <div class="col-md-8">
                     <h3>Diferenças entre os Filmes e os Quadrinhos Originais</h3>
-                    <p><strong>"Os Vingadores"</strong>: No filme, a formação inicial dos Vingadores difere um pouco da formação original dos quadrinhos, com o Hulk sendo um membro fundador nos quadrinhos, enquanto no filme ele é recrutado mais tarde por Nick Fury. Além disso, as motivações e origens de alguns personagens foram adaptadas para se adequar ao contexto cinematográfico.</p>
-                    <p><strong>"Vingadores: Era de Ultron"</strong>: Enquanto o filme apresenta uma versão adaptada da história de criação e motivações de Ultron, as diferenças principais residem na ausência de certos elementos dos quadrinhos, como a participação de Hank Pym na criação do Ultron. Além disso, as relações entre os personagens e as dinâmicas de equipe são exploradas de maneira diferente no filme em comparação com os quadrinhos.</p>
-                    <p><strong>"Vingadores: Guerra Infinita"</strong>: Embora o filme siga o enredo geral da saga das Joias do Infinito, algumas subtramas e detalhes específicos foram ajustados para se adequarem à estrutura narrativa do Universo Cinematográfico da Marvel, resultando em diferenças notáveis em certos eventos e motivações de personagens em comparação com os quadrinhos.</p>
-                    <p><strong>"Vingadores: Ultimato"</strong>: Enquanto o filme apresenta uma adaptação emocionante do enredo do arco "Ultimato" dos quadrinhos, certas reviravoltas e desfechos foram modificados para proporcionar um clímax mais coeso e emocionalmente impactante no contexto do MCU. Além disso, os detalhes das viagens no tempo e suas ramificações foram explorados de maneira diferente para criar uma narrativa mais coesa no filme.</p>
+                    <p><strong>"Os Vingadores"</strong>: No filme, a formação inicial dos Vingadores difere um pouco da
+                        formação original dos quadrinhos, com o Hulk sendo um membro fundador nos quadrinhos, enquanto
+                        no filme ele é recrutado mais tarde por Nick Fury. Além disso, as motivações e origens de alguns
+                        personagens foram adaptadas para se adequar ao contexto cinematográfico.</p>
+                    <p><strong>"Vingadores: Era de Ultron"</strong>: Enquanto o filme apresenta uma versão adaptada da
+                        história de criação e motivações de Ultron, as diferenças principais residem na ausência de
+                        certos elementos dos quadrinhos, como a participação de Hank Pym na criação do Ultron. Além
+                        disso, as relações entre os personagens e as dinâmicas de equipe são exploradas de maneira
+                        diferente no filme em comparação com os quadrinhos.</p>
+                    <p><strong>"Vingadores: Guerra Infinita"</strong>: Embora o filme siga o enredo geral da saga das
+                        Joias do Infinito, algumas subtramas e detalhes específicos foram ajustados para se adequarem à
+                        estrutura narrativa do Universo Cinematográfico da Marvel, resultando em diferenças notáveis em
+                        certos eventos e motivações de personagens em comparação com os quadrinhos.</p>
+                    <p><strong>"Vingadores: Ultimato"</strong>: Enquanto o filme apresenta uma adaptação emocionante do
+                        enredo do arco "Ultimato" dos quadrinhos, certas reviravoltas e desfechos foram modificados para
+                        proporcionar um clímax mais coeso e emocionalmente impactante no contexto do MCU. Além disso, os
+                        detalhes das viagens no tempo e suas ramificações foram explorados de maneira diferente para
+                        criar uma narrativa mais coesa no filme.</p>
                 </div>
             </div>
         </section>
@@ -364,13 +478,17 @@
     <footer class="fundo-branco">
         <p class="text-center">Desenvolvido por Enzo Krebs Silva</p>
         <div class="linha text-center">
-            <a href="https://github.com/enzokrebs8" target="_blank"><img src="img/redes/github_icon.png" alt="" width="64px"></a>
-            <a href="https://instagram.com/krebs_enzo" target="_blank"><img src="img/redes/instaram_icon.png" alt="" width="64px"></a>
-            <a href="https://www.linkedin.com/in/enzo-krebs-999152288/" target="_blank"><img src="img/redes/linkedin_icon.png" alt="" width="64px"></a>
+            <a href="https://github.com/enzokrebs8" target="_blank"><img src="img/redes/github_icon.png" alt=""
+                    width="64px"></a>
+            <a href="https://instagram.com/krebs_enzo" target="_blank"><img src="img/redes/instaram_icon.png" alt=""
+                    width="64px"></a>
+            <a href="https://www.linkedin.com/in/enzo-krebs-999152288/" target="_blank"><img
+                    src="img/redes/linkedin_icon.png" alt="" width="64px"></a>
         </div>
     </footer>
 
     <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/search.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 
