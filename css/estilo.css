@@ -59,3 +59,27 @@ body{
 .capa-filme{
     width: 100%;
 }
+
+.capa-stan{
+    width: 100%;
+}
+
+.linha{
+    flex-direction: row;
+}
+
+
+
+div.fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
